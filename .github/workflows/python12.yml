@@ -1,0 +1,23 @@
+from abc import ABC, abstractmethod
+
+class AbstractClassA(ABC):
+    @abstractmethod
+    def abstract_method_a(self):
+        pass
+
+class AbstractClassB(AbstractClassA):
+    @abstractmethod
+    def abstract_method_b(self):
+        pass
+
+# Example subclass that implements the abstract methods
+class ConcreteClass(AbstractClassB):
+    def abstract_method_a(self):
+        print("Implemented abstract_method_a in ConcreteClass.")
+    
+    def abstract_method_b(self):
+        print("Implemented abstract_method_b in ConcreteClass.")
+
+concrete_instance = ConcreteClass()
+concrete_instance.abstract_method_a()  
+concrete_instance.abstract_method_b()  
