@@ -1,0 +1,8 @@
+sentence = "This is an example sentence."
+
+tokens = sentence.split()
+
+print("Tokens:", tokens)
+
+tokens_type = type(tokens)
+print("Data type of the output:", tokens_type)
