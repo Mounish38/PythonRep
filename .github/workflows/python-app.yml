@@ -1,14 +1,9 @@
 def simple_search(input_list, target):
-    
-    
-    
-    
     for element in input_list:
         if element == target:
             return True  # Element found
     return False  # Element not found
 
-# Example usage (uncomment to test):
-# my_list = [1, 3, 5, 7, 9]
-# target_element = 7
-# print(simple_search(my_list, target_element))  # Output: True
+my_list = [100, 300, 500, 700, 900]
+target_element = 700
+print(simple_search(my_list, target_element))  # Output: True
