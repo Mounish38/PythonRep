@@ -1,0 +1,16 @@
+def find_number_position(input_string, number):
+    
+    number_str = str(number)
+    
+    position = input_string.find(number_str)
+    
+    if position != -1:
+        position += 1  
+    return position
+
+input_string = "The following example creates an list with a capacity of 50 elements. 4 elements are then added to the ArrayList and the ArrayList is trimmed accordingly."
+number1 = "e"
+number2 = 4
+
+print(f"Input - {number1}\nExpected output- {find_number_position(input_string, number1)}")
+print(f"Input - {number2}\nExpected output- {find_number_position(input_string, number2)}")
