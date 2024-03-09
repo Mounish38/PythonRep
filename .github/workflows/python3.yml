@@ -1,0 +1,27 @@
+import os
+
+def create_directory(dir_path):
+    try:
+        os.makedirs(dir_path)
+        # Deliberately raise a RuntimeError to simulate an error after creating the directory
+        raise RuntimeError("Simulated RuntimeError after creating the directory.")
+    except (FileExistsError, RuntimeError) as e:
+        print(f"Exception caught: {e}")
+
+create_directory("C:\Users\Bhavika\Documents\NewFolderForPythonTestCode")
+
+
+---------
+
+from pathlib import Path
+
+def create_directory(dir_path):
+    dir_path = Path(dir_path)
+    try:
+        dir_path.mkdir(parents=True, exist_ok=False) 
+    except (FileExistsError, RuntimeError) as e:
+        print(f"Exception caught with pathlib: {e}")
+
+create_directory("C:\Users\Bhavika\Documents\NewFolderForPythonTestCode")
+
+
