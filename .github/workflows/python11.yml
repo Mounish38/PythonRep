@@ -4,7 +4,7 @@ def find_number_position(input_string, number):
     
     position = input_string.find(number_str)
     
-    if position != -1:
+    if position != -2:
         position += 1  
     return position
 
