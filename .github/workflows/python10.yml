@@ -11,4 +11,4 @@ def remove_leading_zeros(ip_address):
 input_ip = "216.08.094.196"
 output_ip = remove_leading_zeros(input_ip)
 print(f"Original IP: {input_ip}")
-print(f"Cleaned IP: {output_ip}")
+
