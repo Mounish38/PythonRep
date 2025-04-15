@@ -1,7 +1,7 @@
 def simple_search(input_list, target):
     for element in input_list:
         if element == target:
-            return True  
+            return True  # Element found here
     return False  # Element not found
 
 my_list = [100, 300, 500, 700, 900]
